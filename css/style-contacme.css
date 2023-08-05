@@ -1,4 +1,7 @@
 /*HEADER*/
+/*.collapse navbar-collapse texto-encabezado {
+}*/
+
 .encabezado {
     background-image:url(../src/img/steve-johnson-T12spiHYons-unsplash.jpg);
 }
@@ -23,13 +26,16 @@
       width: 100%;
     } 
   } 
-  .body {
-  background-image: url("../src/img/negro.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
+.card-body {
+  background-image: url(../src/img/negro.jpg);
+}
+label{
+  color: white;
+}
+  body {
+  background-image: url(../src/img/li-zhang-xRRQlR8Qu-Y-unsplash.jpg);
+
+
 }
 .content {
   text-align: center;
@@ -57,7 +63,7 @@
 footer {
   background-image:url(../src/img/steve-johnson-T12spiHYons-unsplash.jpg);
   color: #fff;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
 }
 .footer-content {
@@ -71,7 +77,9 @@ footer {
   justify-content: center;
   margin-top: 10px;
 }
-.footer-links li {
+
+.footer-links li {  /*Nombres de las etiquetas con punto . */
+
   margin-right: 20px;
 }
 .footer-links li a {
@@ -82,5 +90,8 @@ footer {
   text-decoration: underline;
 }
 .bi-bi-github {
-margin-right: 3%;
-}
+  margin: 1%;
+  }
+  .bi-bi-linkedin {
+    margin: 1%;
+  }
