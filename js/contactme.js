@@ -82,7 +82,6 @@ function validarNumTel(numTel) {
   }
 }
 
-
 function validarListAsunto(asunto) {
   if (asunto != "Asunto") {
     return true;
@@ -100,9 +99,7 @@ function restauraColor() {
   elemento.style.backgroundColor = 'blue';
 }
 
-
 btnEnviar.addEventListener("click", function (event) {
-  //btnEnviarAnima.style.color = "green";
   event.preventDefault();
   if (!validarNombre(txtNombre.value)) {
     if (!index.includes("nombre")) {
@@ -182,7 +179,6 @@ txtNombre.addEventListener("keyup", function (event) {
     }
   }
   else {
-    //quitar alertas
     alertValidacionesTextoNombre.innerHTML = "";
     alertNombre.style.display = "none";
     txtNombre.style.border = "";
@@ -200,13 +196,11 @@ txtEmail.addEventListener("keyup", function (event) {
     }
   }//if email no cumple las validaciones
   else {
-    //quitar alertas
     alertValidacionesTextoEmail.innerHTML = "";
     alertEmail.style.display = "none";
     txtEmail.style.border = "";
     removeAllInstances(index, "email");
   }
-
 });
 
 txtPhone.addEventListener("keyup", function (event) {
@@ -221,7 +215,6 @@ txtPhone.addEventListener("keyup", function (event) {
 
   }//if phone no cumple las validaciones 
   else {
-    //quitar alertas
     alertValidacionesTextoPhone.innerHTML = "";
     alertPhone.style.display = "none";
     txtPhone.style.border = "";
